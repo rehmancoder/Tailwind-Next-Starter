@@ -1,12 +1,13 @@
 import RootLayout from "@/app/layout";
 import React from "react";
+import Image from "next/image";
+import Hero from "/public/img/Hero-img.jpg";
 
-("use-client");
 const Index = () => {
   return (
-    <RootLayout>
-      <h1 className="text-red-500 text-6xl bg-green-500">Hello World</h1>
-    </RootLayout>
+    <div className="flex justify-center">
+      <Image src={Hero} alt="" />
+    </div>
   );
 };
 
